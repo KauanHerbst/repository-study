@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0em;
+    padding: 0em;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* 
+    HEADER
+*/
+
+.container-header {
+    background-color: #E3371E;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.411);
+}
+
+#header_title {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.header_menu > ul {
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+.header_menu > ul > a > li {
+    padding: 0.2em;
+    color: #151F30;
+    font-weight: bolder;
+}
+
+.header_menu > ul > a:hover {
+    background-color: #0593A2;
+    border-radius: 0.3em;
+    
+}
+
+
+/*
+    MAIN
+*/
+
+.main_section_article > h2{
+    padding: 0.5em;
+    font-size: larger;
+    text-align: center;
+}
+
+.main_section_article > p {
+    text-align: justify;
+    text-indent: 2em;
+    padding: 0.5em;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.main_section_article_image {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+/*
+    FOOTER
+*/
+
+.container-footer {
+    background-color: #FF7A48;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.footer_content {
+    padding: 0.3em;
+    text-align: center;
+}
+
+.footer_content > span {
+    color: white;
+    
+}
+
+ 
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+    * {
+        font-size: 20px;
+    }
+
+    #header_title {
+        font-size: 1.9em;
+    }
+
+    .main_section_article_image {
+        width: 40%;
+    }
+  }
+
+ /* 768px - 1024px = telas menores, laptops */
+ @media (min-width: 1024px) {
+
+    * {
+        font-size: 23px;
+    }
+
+    #header_title {
+        font: 1em;
+    }
+
+    .main_section_article_image {
+        width: 600px;
+        height: 720px;
+    }
+
+  }
+
+  /* 1024px - 1200px = desktop */
+@media (min-width: 1200px) {
+    * {
+        font-size: 20px;
+    }
+
+    
+    body {
+        background-image: linear-gradient(to right, #0593A2, #103778);
+    }
+    
+    .container-header {
+        height: 130px;
+        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.411);
+    }
+
+    .container-main {
+        width: 1000px;
+        margin: auto;
+        background-color: white;
+        border-radius: 0.4em;
+        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.411);
+        
+    }
+
+    .container-footer {
+        height: 2em;
+    }
+    .footer_content {
+        padding: 0.3em;
+    }
+  }
