@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+/* 
+    HEADER
+*/
+
+.container-header {
+    background-color: #9FC131;
+    text-align: center;
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.432);
+    padding: 0.5em;
+}
+
+.container-header > h1 {
+    text-align: center;
+    
+}
+
+.container-header_menu{
+    display: flex;
+    justify-content: center;
+    padding: 0.2em;
+}
+
+.container-header_menu >li > a {
+    color: white;
+    margin-left: 1em;
+    background-color: #005C53;
+    padding: 0.2em;
+    border-radius: 0.4em;
+}
+
+.container-header_menu >li > a:hover{
+    background-color: #D6D58E;
+}
+
+.container-header_menu >li > a > span {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* 
+    MAIN
+*/
+
+.container-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    text-align: justify;
+    padding: 0.4em;
+}
+
+.contianer-main_section {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: .2em;
+}
+
+.contianer-main_section > article > h2{
+    margin: 0.3em;
+}
+
+.contianer-main_section > article > p {
+    text-indent: 3em;
+    font-size: 1.2em;
+}
+
+.main_section_div {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.main_section_image_floater {
+    width: 300px;
+    height: 200px;
+    border-radius: 0.6em;
+    border: solid 0.1em #005C53;
+    margin: 0.5em;
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.432);
+}
+
+.main_section_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0.6em;
+    border: solid 0.1em #005C53;
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.432);
+}
+
+.main_section_video {
+    width: 320px;
+    height: 180px;
+    border: solid 0.1em #005C53;
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.432);
+}
+
+/*
+    FOOTER
+*/
+
+.container-footer {
+    background-color: #DBF227;
+    text-align: center;
+    border-radius: 0.4em;
+}
+
+.container-footer > span{
+    justify-content: center;
+    display: flex;
+    padding: 0.5em;
+}
+
+.container-footer_social {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-footer_social > ul {
+    display: flex;
+    padding: 1em;
+}
+
+.container-footer_social > ul > li {
+    margin-right: 0.7em;
+}
+
+/* 
+    MEDIA QUERIES
+*/
+
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px) {
+    * {
+        font-size: 16px;
+    }
+
+    /* 
+        HEADER
+    */
+
+    header {
+        height: 5em;
+    }
+
+    .container-header > h1{
+        font-size: 2em;
+        padding: 0.2em;
+    }
+
+    .container-header_menu >li > a {
+        padding: 0.4em;
+    }
+
+    .container-header_menu{
+        padding: 0.5em;
+    }
+
+    /* 
+        MAIN
+    */
+
+   .contianer-main_section > article > h2{
+        font-size: 1.4em;
+   }
+
+   .contianer-main_section > article > p {
+        font-size: 1.2em;
+   }
+
+   .main_section_image_floater {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .main_section_image {
+        width: 350px;
+        height: 320px;
+        border-radius: 0.6em;
+
+    }
+
+    .main_section_video {
+        width: 64vh;
+        height: 36vh;
+    }
+
+  }
+
+
+/* 768px - 1024px = telas menores, laptops */
+  @media (min-width: 1024px) {
+    * {
+        font-size: 16px;
+    }
+
+    /* 
+        HEADER
+    */
+
+    header {
+        height: 6em;
+    }
+
+    .container-header > h1{
+        font-size: 2em;
+        padding: 0.2em;
+    }
+
+    .container-header_menu >li > a {
+        padding: 0.4em;
+    }
+
+    .container-header_menu{
+        padding: 0.5em;
+    }
+
+    /* 
+        MAIN
+    */
+
+   .contianer-main_section > article > h2{
+        font-size: 1.4em;
+   }
+
+   .contianer-main_section > article > p {
+        font-size: 1.2em;
+   }
+
+   .main_section_image_floater {
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .main_section_image {
+        width: 350px;
+        height: 320px;
+        border-radius: 0.6em;
+
+    }
+
+    .main_section_video {
+        width: 64vh;
+        height: 36vh;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      background-image: linear-gradient(to right, #042940, #042940);
+    }
+
+    main {
+        width: 1000px;
+        margin: auto;
+        box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.432);
+        border-radius: 0.5em;
+    }
+
+
+  }
